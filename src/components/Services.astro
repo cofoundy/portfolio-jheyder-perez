@@ -1,0 +1,32 @@
+---
+import { siteConfig } from "../config";
+---
+
+<section id="servicios" class="py-16 md:py-20 bg-white">
+  <div class="max-w-6xl mx-auto px-6 lg:px-8">
+    <h2 class="reveal text-2xl md:text-3xl font-bold text-center mb-4" style={`color: ${siteConfig.accentColor}`}>
+      Servicios
+    </h2>
+    <div class="reveal w-16 h-1 mx-auto mb-12 rounded-full" style={`background-color: ${siteConfig.highlightColor}`}></div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      {siteConfig.services?.map((service) => (
+        <div class="reveal group p-8 rounded-2xl border transition-all duration-300 hover:shadow-lg hover:-translate-y-1" style={`border-color: ${siteConfig.accentColor}20`}>
+          <div class="w-14 h-14 rounded-xl flex items-center justify-center mb-5 transition-colors duration-300" style={`background-color: ${siteConfig.accentColor}15`}>
+            {service.icon === "building" ? (
+              <svg class="w-7 h-7" style={`color: ${siteConfig.accentColor}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+              </svg>
+            ) : (
+              <svg class="w-7 h-7" style={`color: ${siteConfig.accentColor}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.75 3.104v5.714a2.25 2.25 0 01-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 014.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0112 15a9.065 9.065 0 00-6.23.693L5 14.5m14.8.8l1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0112 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5" />
+              </svg>
+            )}
+          </div>
+          <h3 class="text-xl font-bold mb-3 text-gray-900">{service.title}</h3>
+          <p class="text-gray-600 leading-relaxed">{service.description}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

@@ -1,0 +1,85 @@
+---
+import Header from "../components/Header.astro";
+import Hero from "../components/Hero.astro";
+import Services from "../components/Services.astro";
+import About from "../components/About.astro";
+import Experience from "../components/Experience.astro";
+import Projects from "../components/Projects.astro";
+import Publications from "../components/Publications.astro";
+import Education from "../components/Education.astro";
+import Contact from "../components/Contact.astro";
+import Footer from "../components/Footer.astro";
+import { siteConfig } from "../config";
+import "../styles/global.css";
+---
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="description" content={siteConfig.description} />
+    <meta name="keywords" content="Jheyder Perez, Ingeniero Civil, Evaluación Estructural, Gestión de Riesgos, Investigador, PUCP, Lima, Perú" />
+    <link rel="canonical" href="https://jheyderperez.com/" />
+    <meta property="og:title" content={`${siteConfig.name} - ${siteConfig.title}`} />
+    <meta property="og:description" content={siteConfig.description} />
+    <meta property="og:image" content="https://jheyderperez.com/og.jpg" />
+    <meta property="og:url" content="https://jheyderperez.com/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="https://jheyderperez.com/og.jpg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>{siteConfig.name} - {siteConfig.title}</title>
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": siteConfig.name,
+      "jobTitle": "Ingeniero Civil & Investigador en Evaluación Estructural",
+      "url": "https://jheyderperez.com",
+      "image": "https://jheyderperez.com/og.jpg",
+      "email": "jheyder.perez@gmail.com",
+      "sameAs": [siteConfig.social?.scholar].filter(Boolean),
+      "alumniOf": [
+        { "@type": "CollegeOrUniversity", "name": "Pontificia Universidad Católica del Perú" },
+        { "@type": "CollegeOrUniversity", "name": "Universidad San Ignacio de Loyola" }
+      ],
+      "worksFor": { "@type": "Organization", "name": "Toward Resilience Corporation S.A.C." },
+      "address": { "@type": "PostalAddress", "addressLocality": "Lima", "addressCountry": "PE" }
+    })} />
+  </head>
+  <body>
+    <Header />
+    <main>
+      <Hero />
+      <Services />
+      <About />
+      <Experience />
+      <Projects />
+      <Publications />
+      <Education />
+      <Contact />
+    </main>
+    <Footer />
+
+    <script>
+      // Scroll reveal observer
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("revealed");
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        { root: null, rootMargin: "0px 0px -10% 0px", threshold: 0.1 }
+      );
+      document.querySelectorAll(".reveal, .reveal-left, .reveal-right, .reveal-scale").forEach((el) => observer.observe(el));
+    </script>
+  </body>
+</html>
