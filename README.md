@@ -2,7 +2,7 @@
 
 Portafolio profesional.
 
-**Live:** *Se actualizará después del deploy*
+**Live:** [jheyderperez.com](https://jheyderperez.com/)
 
 ## Tech Stack
 
