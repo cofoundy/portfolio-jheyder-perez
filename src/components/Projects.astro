@@ -14,7 +14,7 @@ const hasProjects = siteConfig.projects && siteConfig.projects.length > 0;
           <div class="w-16 h-1 mt-3 rounded-full" style={`background-color: ${siteConfig.highlightColor}`}></div>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="grid grid-cols-1 gap-6">
           {siteConfig.projects.map((project, index) => {
             const Component = project.link ? "a" : "div";
             const linkProps = project.link ? { href: project.link, target: "_blank", rel: "noopener noreferrer" } : {};

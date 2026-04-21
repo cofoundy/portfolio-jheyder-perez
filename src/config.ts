@@ -4,8 +4,8 @@ export const siteConfig = {
   description:
     "Ingeniero Civil especializado en Evaluación Estructural y Gestión de Riesgos de Desastres. CEO de Toward Resilience Corp. Investigador visitante en Tohoku University. Docente en PUCP.",
 
-  accentColor: "#0D7377",
-  highlightColor: "#0891B2",
+  accentColor: "#0F4C5C",
+  highlightColor: "#14919B",
 
   stats: [
     { value: "6+", label: "Publicaciones científicas" },
@@ -18,6 +18,8 @@ export const siteConfig = {
 
   social: {
     email: "jheyder.perez@gmail.com",
+    linkedin: "https://www.linkedin.com/in/jheyderperez/",
+    researchgate: "https://www.researchgate.net/profile/Jheyder-Perez-Aguinaga-2",
     whatsapp: "https://wa.me/51959066643",
     scholar: "https://scholar.google.com/citations?user=B-WX9P0AAAAJ&hl=es",
   },
@@ -68,25 +70,28 @@ export const siteConfig = {
       authors: "Perez J., Moya L., Ramirez J., Gonzales E., Mas E., Adriano B. & Koshimura S.",
       year: "2025",
       title: "Tsunami pedestrian evacuation simulation for Camaná, Peru: Perspectives for improving evacuation performance",
-      venue: "17th Aceh International Workshop on Sustainable Tsunami Disaster Recovery",
-      note: "Londres, Reino Unido",
+      venue: "E3S Web of Conferences — 17th Aceh International Workshop on Sustainable Tsunami Disaster Recovery",
+      note: "DOI: 10.1051/e3sconf/202551020011",
       type: "conference",
+      link: "https://doi.org/10.1051/e3sconf/202551020011",
     },
     {
       authors: "Perez J., Cabrera N. & Reza A.",
       year: "2025",
-      title: "Preparedness and Strengths in Disaster Risk Management in Lurigancho-Chosica, Lima, Peru",
-      venue: "17th Aceh International Workshop on Sustainable Tsunami Disaster Recovery",
-      note: "Londres, Reino Unido",
+      title: "Preparedness and strengths in disaster risk management in Lurigancho-Chosica, Lima, Peru: Toward resilience of Lima Metropolitan",
+      venue: "E3S Web of Conferences — 17th Aceh International Workshop on Sustainable Tsunami Disaster Recovery",
+      note: "DOI: 10.1051/e3sconf/202551030005",
       type: "conference",
+      link: "https://doi.org/10.1051/e3sconf/202551030005",
     },
     {
       authors: "Cordova-Arias C. & Perez J.",
       year: "2024",
       title: "Quantitative indicators for multi-hazard community resilience assessment of informal settlements",
-      venue: "18th World Conference on Earthquake Engineering",
-      note: "Milan, Italy",
+      venue: "18th World Conference on Earthquake Engineering — Milan, Italy",
+      note: "Proceedings 18WCEE",
       type: "conference",
+      link: "https://www.researchgate.net/publication/381847001",
     },
   ],
 
@@ -164,6 +169,67 @@ export const siteConfig = {
         "Evaluación estructural y rehabilitación de edificaciones históricas, universidades y viviendas",
         "Técnicas destructivas y no destructivas en concreto armado, albañilería y tierra armada",
       ],
+    },
+  ],
+
+  scholarships: [
+    {
+      name: "Beca 18 — PRONABEC",
+      issuer: "Gobierno del Perú",
+      year: "2015 – 2020",
+      description: "Beca completa de pregrado para estudios de Ingeniería Civil en la Universidad San Ignacio de Loyola.",
+    },
+    {
+      name: "Financiamiento CONCYTEC",
+      issuer: "Consejo Nacional de Ciencia, Tecnología e Innovación Tecnológica",
+      year: "2023 – 2025",
+      description: "Financiamiento para estudios de Maestría en Gestión de Riesgos Naturales en PUCP y tesis sobre evacuación peatonal con reinforcement learning.",
+    },
+    {
+      name: "CDRI — Coalition for Disaster Resilient Infrastructure",
+      issuer: "CDRI Research Grant",
+      year: "2025 – Presente",
+      description: "Financiamiento del proyecto GTEM (Global Tsunami Evacuation Model) en colaboración con Tohoku University y PUCP.",
+    },
+  ],
+
+  awards: [
+    {
+      name: "Premio Excelencia Universitaria",
+      issuer: "ACI International",
+      year: "2020",
+      description: "Reconocimiento internacional a la excelencia académica y aporte a la industria del concreto.",
+    },
+    {
+      name: "1er Puesto — Mención Sobresaliente",
+      issuer: "Pontificia Universidad Católica del Perú (PUCP)",
+      year: "2025",
+      description: "Primer puesto de la promoción en la Maestría en Ingeniería Civil con mención en Gestión de Riesgos Naturales.",
+    },
+    {
+      name: "Tesis con Mención Sobresaliente",
+      issuer: "Universidad San Ignacio de Loyola (USIL)",
+      year: "2020",
+      description: "Tesis de pregrado en Ingeniería Civil reconocida con la más alta distinción.",
+    },
+  ],
+
+  researchLines: [
+    {
+      title: "Evaluación Estructural de Edificaciones Existentes",
+      description: "Ensayos no destructivos, potencial de corrosión y modelamiento estructural en colegios, hospitales, iglesias, edificios residenciales y proyectos mineros.",
+    },
+    {
+      title: "Gestión de Riesgos de Desastres Naturales",
+      description: "Resiliencia comunitaria, preparación frente a sismos, tsunamis, flujos de escombros e inundaciones, con enfoque en Lima Metropolitana.",
+    },
+    {
+      title: "Modelamiento Basado en Agentes (ABM)",
+      description: "Simulación de evacuación peatonal frente a tsunamis mediante agent-based models, con aplicaciones en Camaná, Perú y colaboración con Tohoku University.",
+    },
+    {
+      title: "Reinforcement Learning aplicado a Evacuación",
+      description: "Optimización de rutas de evacuación peatonal utilizando técnicas de machine learning y reinforcement learning para escenarios multi-amenaza.",
     },
   ],
 

@@ -12,7 +12,7 @@ const hasEducation = siteConfig.education && siteConfig.education.length > 0;
         <div class="w-16 h-1 mt-3 rounded-full" style={`background-color: ${siteConfig.highlightColor}`}></div>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div class="grid grid-cols-1 gap-4">
         {siteConfig.education.map((edu, index) => (
           <div
             class={`reveal stagger-${index + 1} card-hover flex gap-4 p-4 rounded-xl bg-white`}

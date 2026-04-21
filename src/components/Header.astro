@@ -4,6 +4,8 @@ import { siteConfig } from "../config";
 const hasProjects = siteConfig.projects && siteConfig.projects.length > 0;
 const hasExperience = siteConfig.experience && siteConfig.experience.length > 0;
 const hasEducation = siteConfig.education && siteConfig.education.length > 0;
+const hasPublications = siteConfig.publications && siteConfig.publications.length > 0;
+const hasAchievements = (siteConfig.scholarships && siteConfig.scholarships.length > 0) || (siteConfig.awards && siteConfig.awards.length > 0) || (siteConfig.researchLines && siteConfig.researchLines.length > 0);
 ---
 
 <header
@@ -31,6 +33,20 @@ const hasEducation = siteConfig.education && siteConfig.education.length > 0;
         <li>
           <a href="#experience" class="link-underline text-sm font-medium transition-colors duration-300" style={`color: ${siteConfig.accentColor}`}>
             Experiencia
+          </a>
+        </li>
+      )}
+      {hasPublications && (
+        <li>
+          <a href="#publicaciones" class="link-underline text-sm font-medium transition-colors duration-300" style={`color: ${siteConfig.accentColor}`}>
+            Publicaciones
+          </a>
+        </li>
+      )}
+      {hasAchievements && (
+        <li>
+          <a href="#achievements" class="link-underline text-sm font-medium transition-colors duration-300" style={`color: ${siteConfig.accentColor}`}>
+            Reconocimientos
           </a>
         </li>
       )}
