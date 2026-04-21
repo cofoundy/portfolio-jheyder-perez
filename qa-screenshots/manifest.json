@@ -1,6 +1,6 @@
 {
-  "url": "http://localhost:4567",
-  "timestamp": "2026-03-25T22:39:38.740Z",
+  "url": "https://jheyderperez.com/",
+  "timestamp": "2026-04-21T16:13:42.071Z",
   "desktop": {
     "viewport": {
       "width": 1280,
@@ -8,14 +8,14 @@
     },
     "full": {
       "file": "desktop-full.png",
-      "fileSize": "740KB"
+      "fileSize": "1059KB"
     },
     "sections": [
       {
         "file": "desktop-hero.png",
         "section": "hero",
-        "height": 726,
-        "fileSize": "117KB"
+        "height": 732,
+        "fileSize": "203KB"
       },
       {
         "file": "desktop-servicios.png",
@@ -32,41 +32,47 @@
       {
         "file": "desktop-experience.png",
         "section": "experience",
-        "height": 1109,
-        "fileSize": "168KB"
+        "height": 1276,
+        "fileSize": "175KB"
       },
       {
         "file": "desktop-projects.png",
         "section": "projects",
-        "height": 857,
-        "fileSize": "100KB"
+        "height": 1115,
+        "fileSize": "97KB"
       },
       {
         "file": "desktop-publicaciones.png",
         "section": "publicaciones",
-        "height": 1008,
-        "fileSize": "110KB"
+        "height": 1120,
+        "fileSize": "129KB"
+      },
+      {
+        "file": "desktop-achievements.png",
+        "section": "achievements",
+        "height": 1772,
+        "fileSize": "212KB"
       },
       {
         "file": "desktop-education.png",
         "section": "education",
-        "height": 568,
-        "fileSize": "54KB"
+        "height": 682,
+        "fileSize": "58KB"
       },
       {
         "file": "desktop-contacto.png",
         "section": "contacto",
         "height": 396,
-        "fileSize": "25KB"
+        "fileSize": "26KB"
       },
       {
-        "file": "desktop-footer-8.png",
-        "section": "footer-8",
+        "file": "desktop-footer-9.png",
+        "section": "footer-9",
         "height": 205,
         "fileSize": "17KB"
       }
     ],
-    "pageHeight": 6002
+    "pageHeight": 8430
   },
   "mobile": {
     "viewport": {
@@ -75,14 +81,14 @@
     },
     "full": {
       "file": "mobile-full.png",
-      "fileSize": "657KB"
+      "fileSize": "920KB"
     },
     "sections": [
       {
         "file": "mobile-hero.png",
         "section": "hero",
-        "height": 881,
-        "fileSize": "73KB"
+        "height": 956,
+        "fileSize": "117KB"
       },
       {
         "file": "mobile-servicios.png",
@@ -94,13 +100,13 @@
         "file": "mobile-about.png",
         "section": "about",
         "height": 1143,
-        "fileSize": "89KB"
+        "fileSize": "90KB"
       },
       {
         "file": "mobile-experience.png",
         "section": "experience",
         "height": 1811,
-        "fileSize": "145KB"
+        "fileSize": "146KB"
       },
       {
         "file": "mobile-projects.png",
@@ -111,8 +117,14 @@
       {
         "file": "mobile-publicaciones.png",
         "section": "publicaciones",
-        "height": 1468,
-        "fileSize": "113KB"
+        "height": 1666,
+        "fileSize": "132KB"
+      },
+      {
+        "file": "mobile-achievements.png",
+        "section": "achievements",
+        "height": 2715,
+        "fileSize": "199KB"
       },
       {
         "file": "mobile-education.png",
@@ -127,12 +139,12 @@
         "fileSize": "21KB"
       },
       {
-        "file": "mobile-footer-8.png",
-        "section": "footer-8",
+        "file": "mobile-footer-9.png",
+        "section": "footer-9",
         "height": 285,
         "fileSize": "15KB"
       }
     ],
-    "pageHeight": 9341
+    "pageHeight": 12328
   }
 }
